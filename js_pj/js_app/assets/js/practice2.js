@@ -100,26 +100,65 @@ class TextAnimation {
   }
 }
 
-const obj = {
-  first_name: 'Mafia',
-  last_name: 'Code',
-  printFullName: function(){
-    console.log('Hello');
+// const obj = {
+//   first_name: 'Mafia',
+//   last_name: 'Code',
+//   printFullName: function(){
+//     console.log('Hello');
+//   }
+// }
+// obj.printFullName()
+
+// class MyObj {
+//   constructor() {
+//     this.first_name = 'Mafia';
+//     this.last_name = 'Code';
+//   }
+//   printFullName(){
+//     console.log('Hello');
+//   }
+// }
+// const obj2 = new MyObj();
+// obj2.printFullName();
+
+
+const obj={
+  first_name:'Mafia',
+  last_name:'Code',
+  printFullName:function(){
+      console.log(this);//thisはキーワード
+      const _that = this;
+      
+      window.setTimeout(function(){
+          console.log();
+      })
+      // const fn =function(){
+      //     console.log(this);
+      // };
+      // window.setTimeout(function(){
+      //     console.log(this);
+      // })
   }
 }
-obj.printFullName()
 
-class MyObj {
-  constructor() {
-    this.first_name = 'Mafia';
-    this.last_name = 'Code';
+const window={
+  setTimeout: function(fn){
+      fn();
+  }
+}
+
+//クラスを定義した時点ではオブジェクトが生成されない
+class MyObj{
+  constructor(){
+      this.first_name = 'Mafia';
+      this.last_name = 'Code';
   }
   printFullName(){
-    console.log('Hello');
+      console.log(this.first_name);
   }
 }
-const obj2 = new MyObj();
-obj2.printFullName();
 
+const obj2=new MyObj();//new演算子でオブジェクトを生成する
 
-
+obj.printFullName();
+obj2.printFullName();//一般的には省略して記載

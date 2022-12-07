@@ -1,7 +1,7 @@
 // TEMPLETE INCLUDE
 function header() { // 共通ヘッダインクルード
   $.ajax({
-    url: '/assets/inc/header.html',
+    url: './assets/inc/header.html',
     cache: false,
     async: false,
     dataType: 'html'
@@ -11,7 +11,7 @@ function header() { // 共通ヘッダインクルード
 }
 function footer() { // 共通フッタインクルード
   $.ajax({
-    url: '/assets/inc/footer.html',
+    url: './assets/inc/footer.html',
     cache: false,
     async: false,
     dataType: 'html'
@@ -21,7 +21,7 @@ function footer() { // 共通フッタインクルード
 }
 function symbol() { // 共通アイコン(SVG)インクルード
   $.ajax({
-    url: '/assets/inc/symbol.html',
+    url: './assets/inc/symbol.html',
     cache: false,
     async: false,
     dataType: 'html'

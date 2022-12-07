@@ -1,0 +1,63 @@
+/* object/compornent/_btn.scss
+-------------------------------------------------- */
+@use "../../foundation/import" as get;
+
+.c-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 120px;
+  height: 40px;
+  border-radius: get.$rounded;
+  transition-duration: 0.3s;
+  cursor: pointer;
+  padding: 0 30px;
+  &:hover {
+    opacity: .7;
+  }
+  &-primary {
+    @extend .c-btn;
+    color: #fff;
+    background-color: get.$primary;
+  }
+  &-secondary {
+    @extend .c-btn;
+    color: get.$primary;
+    border: 1px solid get.$primary;
+    background-color: #fff;
+  }
+  &-thirdly {
+    @extend .c-btn;
+    color: #fff;
+    background-color: #C1300E;
+  }
+  &-disable {
+    @extend .c-btn;
+    color: #fff;
+    background-color: #C7C7C7;
+    pointer-events: none;
+    cursor: default;
+  }
+  &-alert {
+    @extend .c-btn;
+    color: get.$alert;
+    border: 1px solid get.$alert ;
+  }
+  &-sm {
+    width: auto;
+    min-width: initial;
+    height: 30px;
+    padding: 0 10px;
+  }
+  &-lg {
+    min-width: 180px;
+    height: 60px;
+    padding: 0 30px;
+  }
+  &-xl {
+    min-width: 100%;
+    height: 60px;
+    padding: 0 30px;
+  }
+}
+

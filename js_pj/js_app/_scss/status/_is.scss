@@ -1,0 +1,21 @@
+/* status/_is.scss
+-------------------------------------------------- */
+@use "../foundation/import"as get;
+
+.is {
+  &-disable {
+    pointer-events: none;
+  }
+
+  &-lock {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  // body:not(&-load) {
+  //   overflow: hidden;
+  // }
+  @include get.pc {}
+
+  @include get.sp {}
+}

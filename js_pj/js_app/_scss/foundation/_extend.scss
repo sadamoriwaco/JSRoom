@@ -1,0 +1,21 @@
+/* foundation/_extend.scss
+-------------------------------------------------- */
+@use "var"as var;
+@use "mixins"as get;
+
+%hover {
+  @include get.pc {
+    &:not(span):not(p) {
+      transition: opacity .2s ease-in-out;
+      &:hover {
+        opacity: .7;
+      }
+    }
+  }
+}
+
+%ofi {
+  object-fit: cover;
+  font-family: 'object-fit: cover;';
+  height: 100%;
+}

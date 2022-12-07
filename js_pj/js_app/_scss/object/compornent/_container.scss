@@ -1,0 +1,38 @@
+/* object/compornent/_container.scss
+-------------------------------------------------- */
+@use "../../foundation/import" as get;
+
+.c-container {
+  width: 100%;
+  max-width: 1080px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.c-container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.c-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.c-col-1, .c-col-2, .c-col-3, .c-col-4, .c-col-5, .c-col-6, .c-col-7, .c-col-8, .c-col-9, .c-col-10, .c-col-11, .c-col-12, .c-col, .c-col-auto,
+.c-col-1-sm, .c-col-2-sm, .c-col-3-sm, .c-col-4-sm, .c-col-5-sm, .c-col-6-sm, .c-col-7-sm, .c-col-8-sm, .c-col-9-sm, .c-col-10-sm, .c-col-11-sm, .c-col-12-sm, .c-col-sm, .c-col-sm-auto,
+.c-col-1-md, .c-col-2-md, .c-col-3-md, .c-col-4-md, .c-col-5-md, .c-col-6-md, .c-col-7-md, .c-col-8-md, .c-col-9-md, .c-col-10-md, .c-col-11-md, .c-col-12-md, .c-col-md, .c-col-md-auto,
+.c-col-1-lg, .c-col-2-lg, .c-col-3-lg, .c-col-4-lg, .c-col-5-lg, .c-col-6-lg, .c-col-7-lg, .c-col-8-lg, .c-col-9-lg, .c-col-10-lg, .c-col-11-lg, .c-col-12-lg, .c-col-lg, .c-col-lg-auto,
+.c-col-1-xl, .c-col-2-xl, .c-col-3-xl, .c-col-4-xl, .c-col-5-xl, .c-col-6-xl, .c-col-7-xl, .c-col-8-xl, .c-col-9-xl, .c-col-10-xl, .c-col-11-xl, .c-col-12-xl, .c-col-xl, .col-xl-auto {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}

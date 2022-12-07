@@ -1,0 +1,134 @@
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Mixins _Base
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@use "var"as var;
+
+@mixin pc {
+  @media screen and (min-width: #{var.$break+1}px) {
+    @content;
+  }
+}
+@mixin sp {
+  @media screen and (max-width: #{var.$break}px) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media screen and (min-width: #{var.$sm+1}px) {
+    @content;
+  }
+}
+@mixin md {
+  @media screen and (min-width: #{var.$md+1}px) {
+    @content;
+  }
+}
+@mixin lg {
+  @media screen and (min-width: #{var.$lg+1}px) {
+    @content;
+  }
+}
+@mixin xl {
+  @media screen and (min-width: #{var.$xl+1}px) {
+    @content;
+  }
+}
+
+@mixin ie {
+  @media all and (-ms-high-contrast: none) {
+    @content;
+  }
+}
+
+@mixin font-size($mobile-size, $desktop-size, $base: 10) {
+  font-size: $mobile-size + px;
+  font-size: ($mobile-size / $base) + rem;
+  @include pc {
+    font-size: $desktop-size + px;
+    font-size: ($desktop-size / $base) + rem;
+  }
+}
+
+@mixin line-height($mobile-height, $desktop-height, $base: 1.5) {
+  line-height: $mobile-height;
+  @include pc {
+    line-height: $desktop-height;
+  }
+}
+
+@mixin hidden {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: transparent;
+  opacity: 0;
+  transform: scale(0);
+}
+
+// FLEX
+@mixin flex-c {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex-sa {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+@mixin flex-sb {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// FORM
+@mixin none-appearance {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none transparent;
+  background-clip: padding-box;
+  color: inherit;
+  font-size: inherit;
+  vertical-align: middle;
+  box-sizing: border-box;
+  &::-ms-clear {
+    display: none;
+  }
+  &::-ms-reveal {
+    display: none;
+  }
+  &::-ms-expand {
+    display: none;
+  }
+}
+
+@mixin placeholder-color($color) {
+  &:placeholder-shown {
+    color: $color;
+  }
+  &::-webkit-input-placeholder {
+    color:$color;
+  }
+  &:-moz-placeholder {
+    color:$color;
+    opacity: 1;
+  }
+  &::-moz-placeholder {
+    color:$color;
+    opacity: 1;
+  }
+  &:-ms-input-placeholder {
+    color:$color;
+  }
+}

@@ -1,0 +1,172 @@
+/* object/utility/_padding.scss
+-------------------------------------------------- */
+@use "../../foundation/import" as get;
+
+.u-px-0 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+@for $i from 0 through 20 {
+  .u-pt-#{$i * 5},
+  .u-py-#{$i * 5}  {
+    padding-top: #{$i * 5}px !important;
+  }
+}
+
+@for $i from 0 through 20 {
+  .u-pb-#{$i * 5},
+  .u-py-#{$i * 5} {
+    padding-bottom: #{$i * 5}px !important;
+  }
+}
+
+@for $i from 0 through 20 {
+  .u-pl-#{$i * 5},
+  .u-px-#{$i * 5}  {
+    padding-left: #{$i * 5}px !important;
+  }
+}
+
+@for $i from 0 through 20 {
+  .u-pr-#{$i * 5},
+  .u-px-#{$i * 5}  {
+    padding-right: #{$i * 5}px !important;
+  }
+}
+
+@include get.sm {
+  .u-px-auto-sm {
+    padding-left: auto !important;
+    padding-right: auto !important;
+  }
+  @for $i from 0 through 20 {
+    .u-pt-#{$i * 5}-sm,
+    .u-py-#{$i * 5}-sm  {
+      padding-top: #{$i * 5}px !important;
+    }
+  }
+
+  @for $i from 0 through 20 {
+    .u-pb-#{$i * 5}-sm,
+    .u-py-#{$i * 5}-sm {
+      padding-bottom: #{$i * 5}px !important;
+    }
+  }
+
+  @for $i from 0 through 20 {
+    .u-pl-#{$i * 5}-sm,
+    .u-px-#{$i * 5}-sm  {
+      padding-left: #{$i * 5}px !important;
+    }
+  }
+
+  @for $i from 0 through 20 {
+    .u-pr-#{$i * 5}-sm,
+    .u-px-#{$i * 5}-sm  {
+      padding-right: #{$i * 5}px !important;
+    }
+  }
+}
+
+@include get.md {
+  .u-px-auto-md {
+    padding-left: auto !important;
+    padding-right: auto !important;
+  }
+  @for $i from 0 through 20 {
+    .u-pt-#{$i * 5}-md,
+    .u-py-#{$i * 5}-md  {
+      padding-top: #{$i * 5}px !important;
+    }
+  }
+
+  @for $i from 0 through 20 {
+    .u-pb-#{$i * 5}-md,
+    .u-py-#{$i * 5}-md {
+      padding-bottom: #{$i * 5}px !important;
+    }
+  }
+
+  @for $i from 0 through 20 {
+    .u-pl-#{$i * 5}-md,
+    .u-px-#{$i * 5}-md  {
+      padding-left: #{$i * 5}px !important;
+    }
+  }
+
+  @for $i from 0 through 20 {
+    .u-pr-#{$i * 5}-md,
+    .u-px-#{$i * 5}-md  {
+      padding-right: #{$i * 5}px !important;
+    }
+  }
+}
+
+@include get.lg {
+  .u-px-auto-lg {
+    padding-left: auto !important;
+    padding-right: auto !important;
+  }
+  @for $i from 0 through 20 {
+    .u-pt-#{$i * 5}-lg,
+    .u-py-#{$i * 5}-lg  {
+      padding-top: #{$i * 5}px !important;
+    }
+  }
+
+  @for $i from 0 through 20 {
+    .u-pb-#{$i * 5}-lg,
+    .u-py-#{$i * 5}-lg {
+      padding-bottom: #{$i * 5}px !important;
+    }
+  }
+
+  @for $i from 0 through 20 {
+    .u-pl-#{$i * 5}-lg,
+    .u-px-#{$i * 5}-lg  {
+      padding-left: #{$i * 5}px !important;
+    }
+  }
+
+  @for $i from 0 through 20 {
+    .u-pr-#{$i * 5}-lg,
+    .u-px-#{$i * 5}-lg  {
+      padding-right: #{$i * 5}px !important;
+    }
+  }
+}
+
+@include get.xl {
+  .u-px-auto-xl {
+    padding-left: auto !important;
+    padding-right: auto !important;
+  }
+  @for $i from 0 through 20 {
+    .u-pt-#{$i * 5}-xl,
+    .u-py-#{$i * 5}-xl  {
+      padding-top: #{$i * 5}px !important;
+    }
+  }
+
+  @for $i from 0 through 20 {
+    .u-pb-#{$i * 5}-xl,
+    .u-py-#{$i * 5}-xl {
+      padding-bottom: #{$i * 5}px !important;
+    }
+  }
+
+  @for $i from 0 through 20 {
+    .u-pl-#{$i * 5}-xl,
+    .u-px-#{$i * 5}-xl  {
+      padding-left: #{$i * 5}px !important;
+    }
+  }
+
+  @for $i from 0 through 20 {
+    .u-pr-#{$i * 5}-xl,
+    .u-px-#{$i * 5}-xl  {
+      padding-right: #{$i * 5}px !important;
+    }
+  }
+}

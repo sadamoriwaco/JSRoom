@@ -1,0 +1,22 @@
+/* object/utility/_flex.scss
+-------------------------------------------------- */
+@use "../../foundation/import" as get;
+
+.u-flex { display: flex !important; }
+
+.u-jc-c { justify-content: center !important; }
+.u-jc-fe { justify-content: flex-end !important; }
+.u-jc-fs { justify-content: flex-start !important; }
+.u-jc-sa { justify-content: space-around !important; }
+.u-jc-sb { justify-content: space-between !important; }
+.u-jc-se { justify-content: space-evenly !important; }
+
+.u-ai-c { align-items: center !important; }
+.u-ai-fe { align-items: flex-end !important; }
+.u-ai-fs { align-items: flex-start !important; }
+.u-ai-s { align-items: stretch !important; }
+
+.u-fd-c { flex-direction: column !important; }
+.u-fd-cr { flex-direction: column-reverse !important; }
+.u-fd-r { flex-direction: row !important; }
+.u-fd-rr { flex-direction: row-reverse !important; }

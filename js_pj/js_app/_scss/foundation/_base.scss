@@ -1,0 +1,84 @@
+/* foundation/_base.scss
+-------------------------------------------------- */
+@use "import"as get;
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: get.$baseSize;
+  line-height: 1.5;
+  color: get.$black;
+}
+
+img,
+svg {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+input, select, textarea {
+  outline: none;
+  -webkit-appearance: none;
+    -moz-appearance:  none;
+          appearance: none;
+}
+textarea {
+  overflow: auto;
+    resize: none;
+}
+input, textarea{
+  @include get.pc {
+    font-size: get.$baseSize;
+  }
+  @include get.sp {
+    font-size: get.$spSize;
+  }
+}
+input::-ms-clear {
+  visibility: hidden;
+}
+select::-ms-expand {
+  display: none;
+}
+
+[data-hidden] {
+  @include get.hidden;
+}
+
+a {
+  color: get.$primary;
+  text-decoration: underline;
+  cursor: pointer;
+  &[href=""] {
+    pointer-events: none;
+  }
+  @include get.pc{
+    transition-duration: .2s;
+    &:hover{
+      opacity: .7;
+    }
+  }
+}
+
+@include get.pc {
+  [data-device="sp"] {
+    display: none !important;
+  }
+  a {
+    &[href^="tel"] {
+      pointer-events: none;
+    }
+  }
+}
+
+@include get.sp {
+  body {
+    -webkit-overflow-scrolling: touch;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  [data-device="pc"] {
+    display: none !important;
+  }
+}

@@ -1,0 +1,17 @@
+/* object/utility/_font.scss
+-------------------------------------------------- */
+@use "../../foundation/import" as get;
+
+.u-ta-center  { text-align: center!important; }
+.u-ta-right   { text-align: right!important; }
+.u-ta-left    { text-align: left!important; }
+.u-ta-justify { text-align: justify !important; }
+
+.u-text-wrap   { white-space: normal !important; }
+.u-text-nowrap { white-space: nowrap !important; }
+
+.u-fw-400{ font-weight: 400!important; }
+.u-fw-700{ font-weight: 700!important; }
+
+.u-fs-normal { font-style: normal !important; }
+.u-fs-italic { font-style: italic !important; }

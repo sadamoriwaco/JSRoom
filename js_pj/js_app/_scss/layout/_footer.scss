@@ -1,0 +1,16 @@
+/* layout/_footer.scss
+-------------------------------------------------- */
+@use "../foundation/import"as get;
+
+.l-footer{
+}
+
+.scroll_top {
+  width: fit-content;
+  display: none;
+  cursor: pointer;
+  position: sticky;
+  bottom: 20px;
+  margin-right: 30px;
+  margin-left: auto;
+}

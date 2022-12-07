@@ -1,0 +1,10 @@
+/* object/utility/_align.scss
+-------------------------------------------------- */
+@use "../../foundation/import" as get;
+
+.u-va-baseline    { vertical-align: baseline !important; } // Browser default
+.u-va-top         { vertical-align: top !important; }
+.u-va-middle      { vertical-align: middle !important; }
+.u-va-bottom      { vertical-align: bottom !important; }
+.u-va-text-bottom { vertical-align: text-bottom !important; }
+.u-va-text-top    { vertical-align: text-top !important; }

@@ -1,0 +1,172 @@
+/* object/utility/_margin.scss
+-------------------------------------------------- */
+@use "../../foundation/import" as get;
+
+.u-mx-auto {
+  margin-left: auto!important;
+  margin-right: auto!important;
+}
+
+@for $i from 0 through 20 {
+  .u-mt-#{$i * 5},
+  .u-my-#{$i * 5}  {
+    margin-top: #{$i * 5}px!important;
+  }
+}
+
+@for $i from 0 through 20 {
+  .u-mb-#{$i * 5},
+  .u-my-#{$i * 5} {
+    margin-bottom: #{$i * 5}px!important;
+  }
+}
+
+@for $i from 0 through 20 {
+  .u-ml-#{$i * 5},
+  .u-mx-#{$i * 5}  {
+    margin-left: #{$i * 5}px!important;
+  }
+}
+
+@for $i from 0 through 20 {
+  .u-mr-#{$i * 5},
+  .u-mx-#{$i * 5}  {
+    margin-right: #{$i * 5}px!important;
+  }
+}
+
+@include get.sm {
+  .u-mx-auto-sm {
+    margin-left: auto!important;
+    margin-right: auto!important;
+  }
+  @for $i from 0 through 20 {
+    .u-mt-#{$i * 5}-sm,
+    .u-my-#{$i * 5}-sm  {
+      margin-top: #{$i * 5}px!important;
+    }
+  }
+
+  @for $i from 0 through 20 {
+    .u-mb-#{$i * 5}-sm,
+    .u-my-#{$i * 5}-sm {
+      margin-bottom: #{$i * 5}px!important;
+    }
+  }
+
+  @for $i from 0 through 20 {
+    .u-ml-#{$i * 5}-sm,
+    .u-mx-#{$i * 5}-sm  {
+      margin-left: #{$i * 5}px!important;
+    }
+  }
+
+  @for $i from 0 through 20 {
+    .u-mr-#{$i * 5}-sm,
+    .u-mx-#{$i * 5}-sm  {
+      margin-right: #{$i * 5}px!important;
+    }
+  }
+}
+
+@include get.md {
+  .u-mx-auto-md {
+    margin-left: auto!important;
+    margin-right: auto!important;
+  }
+  @for $i from 0 through 20 {
+    .u-mt-#{$i * 5}-md,
+    .u-my-#{$i * 5}-md  {
+      margin-top: #{$i * 5}px!important;
+    }
+  }
+
+  @for $i from 0 through 20 {
+    .u-mb-#{$i * 5}-md,
+    .u-my-#{$i * 5}-md {
+      margin-bottom: #{$i * 5}px!important;
+    }
+  }
+
+  @for $i from 0 through 20 {
+    .u-ml-#{$i * 5}-md,
+    .u-mx-#{$i * 5}-md  {
+      margin-left: #{$i * 5}px!important;
+    }
+  }
+
+  @for $i from 0 through 20 {
+    .u-mr-#{$i * 5}-md,
+    .u-mx-#{$i * 5}-md  {
+      margin-right: #{$i * 5}px!important;
+    }
+  }
+}
+
+@include get.lg {
+  .u-mx-auto-lg {
+    margin-left: auto!important;
+    margin-right: auto!important;
+  }
+  @for $i from 0 through 20 {
+    .u-mt-#{$i * 5}-lg,
+    .u-my-#{$i * 5}-lg  {
+      margin-top: #{$i * 5}px!important;
+    }
+  }
+
+  @for $i from 0 through 20 {
+    .u-mb-#{$i * 5}-lg,
+    .u-my-#{$i * 5}-lg {
+      margin-bottom: #{$i * 5}px!important;
+    }
+  }
+
+  @for $i from 0 through 20 {
+    .u-ml-#{$i * 5}-lg,
+    .u-mx-#{$i * 5}-lg  {
+      margin-left: #{$i * 5}px!important;
+    }
+  }
+
+  @for $i from 0 through 20 {
+    .u-mr-#{$i * 5}-lg,
+    .u-mx-#{$i * 5}-lg  {
+      margin-right: #{$i * 5}px!important;
+    }
+  }
+}
+
+@include get.xl {
+  .u-mx-auto-xl {
+    margin-left: auto!important;
+    margin-right: auto!important;
+  }
+  @for $i from 0 through 20 {
+    .u-mt-#{$i * 5}-xl,
+    .u-my-#{$i * 5}-xl  {
+      margin-top: #{$i * 5}px!important;
+    }
+  }
+
+  @for $i from 0 through 20 {
+    .u-mb-#{$i * 5}-xl,
+    .u-my-#{$i * 5}-xl {
+      margin-bottom: #{$i * 5}px!important;
+    }
+  }
+
+  @for $i from 0 through 20 {
+    .u-ml-#{$i * 5}-xl,
+    .u-mx-#{$i * 5}-xl  {
+      margin-left: #{$i * 5}px!important;
+    }
+  }
+
+  @for $i from 0 through 20 {
+    .u-mr-#{$i * 5}-xl,
+    .u-mx-#{$i * 5}-xl  {
+      margin-right: #{$i * 5}px!important;
+    }
+  }
+}

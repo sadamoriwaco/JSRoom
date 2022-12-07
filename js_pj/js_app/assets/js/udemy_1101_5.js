@@ -20,6 +20,12 @@
 document.addEventListener('DOMContentLoaded', function() {
     const ta = new TextAnimation('.animate-title');
     const ta2 = new TextAnimation('.animate-title-2');
+    ta.animate();
+    ta2.animate();
+    // btn.addEventListener('click',ta.animate.bind(ta));
+    btn.addEventListener('click',function(){
+        ta.animate();
+    });
     // const el = document.querySelector('.animate-title');
     // const el2 = document.querySelector('.animate-title-2');
     // const str = el.innerHTML.trim().split("");
@@ -50,6 +56,9 @@ class TextAnimation {
         },"");
     }
     animate() {
+        // this.el.classList.toggle('inview');
         this.el.classList.toggle('inview');
     }
 }
+
+

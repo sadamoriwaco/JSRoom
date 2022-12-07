@@ -1,0 +1,42 @@
+@charset "UTF-8"
+// ------------------------------------------------------------------
+// Foundation → sassに関する設定、cssの初期化など
+// Layout  → サイト全体で使用する要素など
+// lib     → スライダーなどのプラグインを使用する際に必要なcssなど
+// Object
+//  - Compornent → 各種モジュールなど
+//  - Project → ページ単位の記述や compornent で設定したものと個別に違う場合など
+//  - Utility → CompornentやProjectでは定義しきれない例外的なスタイルなど
+// Status → 状態を表すクラスなど
+// ------------------------------------------------------------------
+
+// Foundation -----------------------------
+@use "foundation/reset"
+@use "foundation/base"
+@use "foundation/import"
+
+// Lib ---------------------------------
+@use "lib/modal"
+
+// layout ------------------------------
+@use "layout/header"
+@use "layout/footer"
+
+// Compornent -----------------------------
+@use "object/compornent/inner"
+@use "object/compornent/container"
+@use "object/compornent/form"
+@use "object/compornent/btn"
+
+// Project -----------------------------
+@use "object/project/common"
+
+// Utility -----------------------------
+@use "object/utility/align"
+@use "object/utility/flex"
+@use "object/utility/font"
+@use "object/utility/margin"
+@use "object/utility/padding"
+
+// Status ------------------------------
+// @use "status/is"

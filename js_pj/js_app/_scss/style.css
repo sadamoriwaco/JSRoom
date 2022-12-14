@@ -1,0 +1,12 @@
+/* foundation/_extend.scss
+-------------------------------------------------- */
+/* status/_is.scss
+-------------------------------------------------- */
+.is-disable {
+  pointer-events: none;
+}
+.is-lock {
+  height: 100%;
+  overflow: hidden;
+}
+/*# sourceMappingURL=style.css.map */
